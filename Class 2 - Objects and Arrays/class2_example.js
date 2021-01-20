@@ -83,3 +83,25 @@ console.log(hiArray);
 let[...rest] = teachers3;
 
 console.log(rest);
+
+//Objects
+
+let course = {
+    name: 'JavaScript Applications',
+    awesome: true,
+    teachers: ['Ken', 'Josh']
+};
+
+let selectedValueOfDropDown = 'name';
+course.teachers[2] = 'Chris';
+console.log(course.awesome);
+console.log(course['teachers'][2]);
+
+
+let instructor = {
+    name: 'Ken',
+    email: 'ken@techtalentsouth.com'
+}
+let { name: x, email: y} = instructor;
+
+console.log(x);
