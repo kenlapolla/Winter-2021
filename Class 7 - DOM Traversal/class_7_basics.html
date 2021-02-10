@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 7 DOM</title>
+    <script src="class_7_basics.js"></script>
+    <style>
+        h1{
+            
+        }
+    </style>
+    
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1 id="main">This is my heading</h1>
+    <article id="myEl">This is the first article of the webpage</article>
+    <section>
+        <input type="text" id="username" placeholder="Enter UserName"> 
+        <input type="password" placeholder="Enter password">
+        <input type="text" class="error"> 
+        <button>submit</button>
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.facebook.com">Facebook</a>
+        <a class="test" href="#"><p>Change this text</p></a>
+    </section>
+    <section>
+        <ul>
+            <li>I am not null</li>
+            <li class="selected"><a href="#">Item 1</a></li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>I am not null</li>
+        </ul>
+    </section>
+
+    <div class="outer">
+        <div class="inner">Click Me</div>
+    </div>
+
+    
+    <script>
+
+        // let el1 = document.getElementById('myEl');
+        // el1.addEventListener('mouseover', event => {
+        //     alert('clicked!');
+        //     console.log(event);
+        // });
+
+        // document.querySelector('.outer').addEventListener('click', e => {
+        //         // e represents the event (element that has been clicked)
+        //     console.log(e.target, e.currentTarget);
+        //         //inner, outer
+        //     })
+        $(document).ready(() => {
+            console.log('this runs second');
+            $("div.inner").click(function() {
+                console.log("Clicked");
+            $("div.inner").text = "I have been clicked";
+        })
+        })
+
+        console.log('this runs first');
+        
+        // let element = document.getElementById('username');
+        // console.log(element);
+        // let inputs =document.getElementsByTagName('input');
+        // console.log(inputs);
+        // let inError1 = document.getElementsByClassName('error');
+        // console.log(inError1);
+
+        // let firstButton = document.querySelector('button');
+        // let inError2 = document.querySelectorAll('input.error');
+
+
+
+        // let links = document.querySelectorAll('a');
+ 
+        // //Works!
+        // let linkCount = links.length;
+        // let firstLink = links[0];
+        
+        // //Doesn't work!
+        // links.forEach(function(link){
+        //     //do something with link
+        //     console.log(link);
+        // });
+
+        
+        // let arrayOfLinks = Array.from(links);
+
+        // //Find Children of the unordered list
+        // let listItems = document.querySelector('ul').children[0].children;
+        // listItems.length; //2
+
+        // let firstListItem = document.querySelector('li.selected');
+        // console.log(firstListItem);
+        // let first = firstListItem.previousElementSibling;
+        // console.log(first);
+        // let last = firstListItem.nextElementSibling;
+        // console.log(last);
+        // let parent = firstListItem.parentElement.parentElement.previousElementSibling;
+        // console.log(parent);
+
+        // let textChange = document.querySelector('a.test');
+        //     textChange
+    </script>
+
+</body>
+</html>

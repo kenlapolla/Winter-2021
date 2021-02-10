@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 7 Lesson 3 jQuery</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+  <header>
+    <ul>
+        <li class="first">Item 1</li>
+        <li class="selected">Item 2</li>
+        <li class="last">Item 3</li>
+    </ul>
+  </header> 
+    <div class="col">
+        <section>
+            <h2>Section 1</h2>
+        </section>
+        <section class="current">
+            <h2 class="highlight">Section 2</h2>
+        </section>
+        <section>
+            <h1>Section 3</h1>
+        </section>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            console.log($('header'));
+            console.log($('section'));
+            console.log($('section.current'));
+
+            //Get the section that comes after the current section
+            console.log($('section.current').next());
+
+            //Get the h2 node from the section before the 'current' section
+            console.log($('section.current').prev().find("h2")[0]);
+            //Get the div that contains the section that has an h2 with a class of 'highlight
+            console.log($('h2.highlight').parents('div'));
+            //Get all the sections that contain an h2 and store them in an Array
+            console.log($('h2').parents('section').toArray());
+        });
+
+    </script>
+</body>
+</html>

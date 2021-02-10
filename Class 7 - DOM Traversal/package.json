@@ -1,0 +1,14 @@
+{
+  "name": "domtraversal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "class_7_basics.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
