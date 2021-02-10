@@ -1,0 +1,16 @@
+{
+  "name": "javascript_app_development",
+  "version": "1.0.0",
+  "description": "This is my first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node index.js"
+  },
+  "author": "Ken",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {}
+}
