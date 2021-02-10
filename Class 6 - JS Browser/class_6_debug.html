@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug</title>
+    <script src="BeforeScript.js"></script>
+    <script>
+        
+        function modifyColor(){
+            document.getElementById("articleHeading").style.color = "aqua";
+            document.getElementById("description").style.color = "grey";
+        }
+        // answer();
+        // modifyColor();
+
+    </script>
+</head>
+<body>
+    <h1>Woodworking</h1>
+    <h2 id = "articleHeading">How do you make millions in Woodworking?</h2>
+    <p id="description">Start as a Billionaire and then work your way down</p>
+    <p id="answer"></p>
+    
+
+    <button type="button" 
+    onclick="alert(Math.floor(Math.random() * (7 - 1)) + 1)">
+    Click Me</button>
+    
+    <script src="AfterScript.js"></script>
+    <script>
+
+        answer();
+        // modifyColor();
+    </script>
+    <script src="L6E1_rock_paper_scissor.js"></script>
+</body>
+</html>
