@@ -1,0 +1,26 @@
+{
+  "name": "webpack_class",
+  "version": "1.0.0",
+  "description": "This is the tutorial on Webpack",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.12.16",
+    "css-loader": "^5.0.2",
+    "moment": "^2.29.1",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.19.0",
+    "eslint-webpack-plugin": "^2.5.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ken",
+  "license": "ISC"
+}
